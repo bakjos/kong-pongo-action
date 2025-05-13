@@ -18,6 +18,7 @@ This action will install and configure Pongo for a specific version of [Kong Gat
 | `pongo_version` | `"latest"` | yes | The Pongo version to use for testing. This can be a Pongo version tag or branch name (use `"master"` for bleeding-edge). A special case is `"latest"` which will use the latest released version. |
 | `start_environment` | `"true"` | no | By default the test environment will be spun up. Set this value to `"false"` to not start the test environment. |
 | `build_image` | `"true"` | no | By default the test image will be build. Set this value to `"false"` to not build the test image. |
+| `cache` |  | no | If set, cache the Pongo test image using the given docker cache type to avoid rebuilding the image at each run. Can only be set to `github` for now. |
 | `license` | value of env var `KONG_LICENSE_DATA` | no | The Kong license. This is only required if you are testing a plugin against an Enterprise version of the Kong Gateway. </br>**Note**: make sure to pass it to Github as a secret! |
 
 

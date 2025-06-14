@@ -85,7 +85,7 @@ runs:
     - name: Fetch Pongo
       uses: actions/checkout@v3
       with:
-        repository: Kong/kong-pongo
+        repository: bakjos/kong-pongo
         path: kong-pongo
         fetch-depth: ${{ steps.pongo_ref.outputs.fetch }}
         ref: ${{ steps.pongo_ref.outputs.ref }}
